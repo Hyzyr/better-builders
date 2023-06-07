@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 60px 0;
+  padding: 50px 0;
   z-index: 2;
   transition: 0.2s ease-out;
   transition-property: opacity, transform, padding;
@@ -14,17 +14,11 @@
     justify-content: space-between;
     gap: 30px;
     z-index: 2;
-
     .burger {
       display: none;
     }
-    .logo {
-      font-size: 20px;
-      width: 10em;
-      height: 3em;
-    }
+ 
   }
-
   &:after {
     position: absolute;
     content: "";
@@ -41,7 +35,7 @@
     padding: 10px 0;
     transition-duration: 0.5s;
     // background: $black-secondary;
-
+    background-color: #100c1c;
     &:after {
       opacity: 1;
       height: 2px;
@@ -65,10 +59,10 @@
       padding: 5px 0;
       //font
       color: $white;
-      font-family: $font-secondary;
+      font-family: $font-primary;
       font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
+      font-weight: 600;
+      font-size: 20px;
       line-height: 130%;
       transition: 0.3s ease-out;
       &:after {
@@ -163,6 +157,7 @@
 }
 @mixin header-1390 {
   .header {
+    padding: 40px 0;
     &__inner {
       .logo {
         font-size: 18px;
@@ -171,14 +166,13 @@
   }
   .nav {
     &__inner {
-      &-link {
-        font-size: 20px;
-      }
+      grid-area: 65px;
     }
   }
 }
 @mixin header-1280 {
   .header {
+    padding: 30px 0;
     &__inner {
       .logo {
         font-size: 16px;
@@ -187,8 +181,7 @@
   }
   .nav {
     &__inner {
-      gap: 23px;
-
+      gap: 40px;
       &-link {
         font-size: 18px;
       }
@@ -198,7 +191,6 @@
 @mixin header-1025 {
   .header {
     padding: 25px 0;
-
     &__inner {
       justify-content: space-between;
 
@@ -224,7 +216,6 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0s ease 0.25s, opacity 0.2s ease-in-out 0s;
-
     &__inner {
       position: absolute;
       top: 0;
@@ -279,7 +270,6 @@
         }
       }
     }
-
     &.active {
       pointer-events: all;
       transform: translate(0);
@@ -305,4 +295,15 @@
       }
     }
   }
+}
+@mixin header-460{
+  .header {
+    padding: 20px 0;
+  }
+  .nav{
+    &__inner{
+      min-width:230px ;
+    }
+  }
+
 }
