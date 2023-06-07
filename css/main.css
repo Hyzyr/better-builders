@@ -258,7 +258,7 @@ body {
   height: 100%;
   cursor: default;
   font-size: 20px;
-  color: #181528;
+  color: #000;
   line-height: 1.2;
   font-weight: 600;
   background: #fff;
@@ -335,38 +335,38 @@ svg {
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .input input::-webkit-input-placeholder, .input textarea::-webkit-input-placeholder, .input__selected::-webkit-input-placeholder {
-  color: #898791;
+  color: #262437;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .input input::-moz-placeholder, .input textarea::-moz-placeholder, .input__selected::-moz-placeholder {
-  color: #898791;
+  color: #262437;
   transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .input input:-ms-input-placeholder, .input textarea:-ms-input-placeholder, .input__selected:-ms-input-placeholder {
-  color: #898791;
+  color: #262437;
   -ms-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .input input::-ms-input-placeholder, .input textarea::-ms-input-placeholder, .input__selected::-ms-input-placeholder {
-  color: #898791;
+  color: #262437;
   -ms-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .input input::placeholder,
 .input textarea::placeholder, .input__selected::placeholder {
-  color: #898791;
+  color: #262437;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 .input input:focus,
 .input textarea:focus {
-  border-color: #FC7433;
+  border-color: #fc7433;
 }
 .input input:focus::-webkit-input-placeholder, .input textarea:focus::-webkit-input-placeholder {
   opacity: 0.7;
@@ -394,7 +394,7 @@ svg {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
   border-radius: 7px;
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 0.45em 0.45em;
 }
 .input--select .input__selected:hover {
@@ -447,7 +447,7 @@ svg {
           flex-direction: column;
   gap: 15px;
   border-radius: 0 0 0.45em 0.45em;
-  background: #FAFAFA;
+  background: #fafafa;
   font-weight: 600;
   padding: 1.35em 1.85em;
 }
@@ -469,7 +469,7 @@ svg {
 }
 .input--select.active .input__selected {
   color: #181528;
-  border-color: #FC7433;
+  border-color: #fc7433;
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
   -webkit-transition-delay: 0s;
@@ -486,7 +486,7 @@ svg {
   top: 100%;
   max-height: 30vh;
   overflow-y: auto;
-  border-color: #FC7433;
+  border-color: #fc7433;
   opacity: 1;
   -webkit-transition: max-height 0.4s ease, opacity 0.2s ease;
   transition: max-height 0.4s ease, opacity 0.2s ease;
@@ -503,7 +503,7 @@ svg {
 }
 .input--text input {
   border-radius: 0.45em;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 .input--text label {
   font-weight: 500;
@@ -512,7 +512,7 @@ svg {
 .input--text textarea {
   border-radius: 0.45em;
   min-height: 280px;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 .button {
@@ -539,7 +539,7 @@ svg {
   text-transform: uppercase;
 }
 .button--primary {
-  background: #FC7433;
+  background: #fc7433;
 }
 .button--primary._lg {
   padding: 1.05em 4.45em;
@@ -589,7 +589,7 @@ svg {
   background: #2f5bd1;
   border-radius: 100px;
   padding: 0.3em 0.5em;
-  color: #181528;
+  color: #000;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -612,7 +612,7 @@ svg {
   opacity: 0;
 }
 .checkbox input:checked + span::before {
-  border-color: #181528;
+  border-color: #000;
 }
 .checkbox span {
   position: absolute;
@@ -629,7 +629,7 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1.5px solid #181528;
+  border: 1.5px solid #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -641,8 +641,8 @@ svg {
   left: 50%;
   width: 0.25em;
   height: 0.5em;
-  border-bottom: 1.5px solid rgba(24, 21, 40, 0.2);
-  border-right: 1.5px solid rgba(24, 21, 40, 0.2);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+  border-right: 1.5px solid rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.1s ease;
   transition: 0.1s ease;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -775,7 +775,7 @@ svg {
   left: 50%;
   width: 2px;
   height: 100%;
-  background: #181528;
+  background: #000;
 }
 .custIcon--cross:before {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -796,8 +796,8 @@ svg {
   left: 50%;
   width: 45%;
   height: 80%;
-  border-bottom: 2px solid #181528;
-  border-right: 2px solid #181528;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -806,7 +806,7 @@ svg {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: #181528;
+  background: #000;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
@@ -840,13 +840,13 @@ svg {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: #FC7433;
+  background: #fc7433;
 }
 .custIcon--rounded:after {
   top: 45%;
   width: 25%;
   height: 50%;
-  border-color: #181528;
+  border-color: #000;
 }
 
 .noBreak {
@@ -861,8 +861,8 @@ svg {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 0;
-  z-index: 1;
+  padding: 60px 0;
+  z-index: 2;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   -webkit-transition-property: opacity, padding, -webkit-transform;
@@ -878,22 +878,43 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 30px;
   z-index: 2;
 }
 .header__inner .burger {
   display: none;
 }
+.header__inner .logo {
+  font-size: 20px;
+  width: 10em;
+  height: 3em;
+}
+.header:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 .header.sticky {
   position: fixed;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(47, 91, 209, 0.4);
-  -webkit-animation: 0.3s sticky ease-in;
-          animation: 0.3s sticky ease-in;
+  padding: 10px 0;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
-
+.header.sticky:after {
+  opacity: 1;
+  height: 2px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
 .nav {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -907,17 +928,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.nav__inner-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 80px;
 }
 .nav__inner-link {
   position: relative;
@@ -927,23 +938,15 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 20px;
+  padding: 5px 0;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1;
+  font-size: 24px;
+  line-height: 130%;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
-}
-.nav__inner-link._sm {
-  padding: 5px 10px;
-}
-.nav__inner-link svg {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 0.7em;
 }
 .nav__inner-link:after {
   content: "";
@@ -951,22 +954,30 @@ svg {
   position: absolute;
   bottom: -3px;
   left: 50%;
-  height: 0;
+  height: 4px;
   width: 60%;
-  background: #FC7433;
+  background: #fc7433;
   opacity: 0;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  border-radius: 2px;
 }
 .nav__inner-link:hover {
-  color: #FC7433;
+  opacity: 0.6;
 }
 .nav__inner-link:hover:after {
   opacity: 1;
-  height: 2px;
-  width: 80%;
+  width: 100%;
+}
+.nav__inner-link.active {
+  color: #fff;
+  font-weight: 500;
+}
+.nav__inner-link.active:after {
+  opacity: 1;
+  width: 100%;
 }
 
 .burger {
@@ -974,7 +985,7 @@ svg {
   display: block;
   position: relative;
   font-size: 10px;
-  width: 2.6em;
+  width: 3em;
   height: 2em;
   color: #fff;
   background: transparent;
@@ -987,7 +998,6 @@ svg {
   width: 100%;
   height: 0.32em;
   background-color: currentColor;
-  border-radius: 0.4em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1011,9 +1021,6 @@ svg {
 .burger:hover {
   opacity: 0.8;
 }
-.burger.active {
-  color: #FC7433;
-}
 .burger.active::before {
   top: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -1029,6 +1036,84 @@ svg {
   opacity: 0;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+}
+
+.hero {
+  position: relative;
+  padding: 200px 0 160px 0;
+  margin-bottom: 50px;
+}
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+.hero__bg-fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+.hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  color: #fff;
+  min-height: calc(95vh - 360px);
+  width: 63%;
+}
+.hero__inner .logo {
+  font-size: 49px;
+}
+.hero__inner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.hero__inner h1 {
+  font-weight: 600;
+}
+.hero__inner p {
+  font-weight: 400;
+}
+.hero__inner-license {
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 130%;
+}
+.hero__inner-buttons .button {
+  min-width: 50px;
 }
 
 @media (max-width: 1160px) {
@@ -1049,10 +1134,8 @@ svg {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .header__inner-logo {
-    padding-right: 20px;
-    border-right: 2px solid rgba(255, 255, 255, 0.27);
-    border: 0;
+  .header__inner .logo {
+    font-size: 14px;
   }
   .header__inner .burger {
     display: block;
@@ -1065,7 +1148,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(24, 21, 40, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
     z-index: 0;
@@ -1096,8 +1179,8 @@ svg {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background: #fff;
-    -webkit-box-shadow: 0px 4px 24px -1px rgba(24, 21, 40, 0.2);
-            box-shadow: 0px 4px 24px -1px rgba(24, 21, 40, 0.2);
+    -webkit-box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
     padding: 50px 25px;
     -webkit-transform: translate(-100%);
             transform: translate(-100%);
@@ -1115,7 +1198,7 @@ svg {
             align-items: flex-start;
     padding: 25px 0;
     gap: 8px;
-    color: #181528;
+    color: #000;
     border-top: 1px solid #fff;
     width: 100%;
   }
@@ -1123,9 +1206,10 @@ svg {
     border: 0;
   }
   .nav__inner-link {
-    color: #181528;
+    color: #000;
   }
   .nav__inner-link:after {
+    display: none;
     left: 0;
     top: 50%;
     width: 2px;
@@ -1133,12 +1217,14 @@ svg {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .nav__inner-link:hover {
+  .nav__inner-link.active {
     color: #2f5bd1;
   }
-  .nav__inner-link:hover:after {
+  .nav__inner-link.active:after {
+    display: block;
+    left: -8px;
     width: 2px;
-    height: 100%;
+    height: 60%;
   }
   .nav.active {
     pointer-events: all;
