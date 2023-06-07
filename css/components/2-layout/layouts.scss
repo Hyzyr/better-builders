@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    gap: 48px;
     color: $white;
     min-height: calc(95vh - 360px);
     width: 63%;
@@ -44,9 +44,12 @@
     }
     h1 {
       font-weight: 600;
+      line-height: 1.55;
     }
     p {
       font-weight: 400;
+      line-height: 1.8;
+      max-width: 676px;
     }
     &-license {
       color: $white;
