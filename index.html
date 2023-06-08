@@ -1,78 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/main.css" />
-  <!-- <link rel="icon" href="images/logo-small.svg" /> -->
-  <title>%ProjectName% | Home</title>
-</head>
-
-<body>
-  <div class="main">
-    <!-- #header -->
-    <header class="header" id="header">
-      <div class="autoContainer">
-        <div class="header__inner">
-          <div class="nav" id="menu">
-            <div class="nav__inner">
-              <a href="#" class="nav__inner-link active">Home</a>
-              <a href="#" class="nav__inner-link">About us</a>
-              <a href="#" class="nav__inner-link">Services</a>
-              <a href="#" class="nav__inner-link">Projects</a>
-              <a href="#" class="nav__inner-link">Contact Us</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Better Builders | Home</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- #header -->
+      <header class="header" id="header">
+        <div class="autoContainer _lg">
+          <div class="header__inner">
+            <div class="nav" id="menu">
+              <div class="nav__inner">
+                <a href="#" class="nav__inner-link active">Home</a>
+                <a href="#" class="nav__inner-link">About us</a>
+                <a href="#" class="nav__inner-link">Services</a>
+                <a href="#" class="nav__inner-link">Projects</a>
+                <a href="#" class="nav__inner-link">Contact Us</a>
+              </div>
+            </div>
+            <span class="logo">
+              <img src="images/logo.png" alt="BHNV Remodeling" />
+            </span>
+            <button class="burger" id="menuBtn"></button>
+          </div>
+        </div>
+      </header>
+      <!-- #header end -->
+      <!-- #hero -->
+      <section class="hero">
+        <div class="autoContainer _lg">
+          <div class="hero__bg">
+            <img src="images/hero.png" alt="bg" />
+            <div class="hero__bg-fog" style="opacity: 0.55"></div>
+          </div>
+          <div class="hero__inner">
+            <div class="hero__inner-box">
+              <h1>
+                TRANSFORMING SPACES,
+                <br />
+                BUILDING DREAMs
+              </h1>
+              <p>
+                Unlock the Potential of Your Home with Better Builders: Where
+                Imagination Meets Construction Excellence
+              </p>
+            </div>
+            <div class="button__wrapper">
+              <a href="#" class="button button--primary">Call us</a>
+              <a href="#" class="button button--border">
+                Schedule Appointment
+              </a>
             </div>
           </div>
-          <span class="logo">
-            <img src="images/logo.png" alt="BHNV Remodeling" />
-          </span>
-          <button class="burger" id="menuBtn"></button>
         </div>
-      </div>
-    </header>
-    <!-- #header end -->
-    <!-- #hero -->
-    <section class="hero">
-      <div class="autoContainer">
-        <div class="hero__bg">
-          <img src="images/hero.png" alt="bg" />
-          <div class="hero__bg-fog" style="opacity: 0.55"></div>
+      </section>
+      <!-- #hero end -->
+      <!-- #about  -->
+      <section class="about">
+        <div class="autoContainer">
+          <div class="about__inner">
+            <div class="about__inner-banner">
+              <div class="about__banner">
+                <div class="about__banner-row">
+                  <div class="about__banner-image">
+                    <img src="./images/about/about-1.png" alt="" />
+                  </div>
+                  <div class="about__banner-image">
+                    <img src="./images/about/about-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__inner-content">
+              <div class="title">
+                <h4>About us</h4>
+                <h2>
+                  Building Trust, Crafting <br />
+                  Excellence
+                </h2>
+              </div>
+              <p>
+                At Better Builders, we are dedicated to delivering exceptional
+                craftsmanship and fostering strong relationships with our
+                clients. We have been serving the community with quality
+                craftsmanship, exceptional service, and reliable results for
+                years. Our team of experts is committed to excellence in every
+                project
+              </p>
+              <div class="about__counter">
+                <div class="about__counter-row">
+                  <div class="about__counter-item">
+                    <strong>Best Work</strong>
+                    <small>Customers Love Us</small>
+                  </div>
+                  <div class="about__counter-item">
+                    <strong>> On Time</strong>
+                    <small>Fast, efficient Work</small>
+                  </div>
+                </div>
+                <div class="about__counter-row">
+                  <div class="about__counter-item">
+                    <strong>5-Stars</strong>
+                    <small>Our reviews speak loudly</small>
+                  </div>
+                  <div class="about__counter-item">
+                    <strong>> #1 Team</strong>
+                    <small>Best Team in CA</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero__inner">
-          <div class="logo">
-            <img src="images/logo-bigger.png" alt="" />
+      </section>
+      <!-- #about end -->
+      <section class="bg bg--st">
+        <div class="bg__image">
+          <img
+            src="images/testimonials/blue-smooth-wall-textured-background.png"
+            alt=""
+          />
+        </div>
+        <!-- #services -->
+        <section class="services">
+          <div class="autoContainer">
+            <div class="services__inner">
+              <div class="services__inner-title title">
+                <h4 class="subtitle">OUR SERVICES</h4>
+                <h2>Crafting Extraordinary Spaces, Redefining Home Living</h2>
+              </div>
+              <div class="services__inner-swiper">
+                <div class="swiper" data-swiper="service">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide services__item">
+                      <div class="services__item-icon">
+                        <img
+                          src="images/services/service-1.svg"
+                          alt="Residential Construction"
+                        />
+                      </div>
+                      <h3 class="services__item-title">
+                        Residential <br />
+                        Construction
+                      </h3>
+                      <p class="_sm">
+                        From custom-built homes to stunning additions, our
+                        expert team will bring your dream home to life
+                      </p>
+                      <div class="services__item-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide services__item">
+                      <div class="services__item-icon">
+                        <img
+                          src="images/services/service-2.svg"
+                          alt="Remodeling and Renovations"
+                        />
+                      </div>
+                      <h3 class="services__item-title">
+                        Remodeling and <br />
+                        Renovations
+                      </h3>
+                      <p class="_sm">
+                        Enhance the beauty and functionality of your existing
+                        space through our remodeling and renovation.
+                      </p>
+                      <div class="services__item-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide services__item">
+                      <div class="services__item-icon">
+                        <img
+                          src="images/services/service-3.svg"
+                          alt="Kitchen and Bathroom Upgrades "
+                        />
+                      </div>
+                      <h3 class="services__item-title">
+                        Kitchen and Bathroom <br />
+                        Upgrades
+                      </h3>
+                      <p class="_sm">
+                        Upgrade your kitchen or bathroom with our comprehensive
+                        design and remodeling solutions.
+                      </p>
+                      <div class="services__item-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide services__item">
+                      <div class="services__item-icon">
+                        <img
+                          src="images/services/service-4.svg"
+                          alt="Outdoor Living Spaces"
+                        />
+                      </div>
+                      <h3 class="services__item-title">
+                        Outdoor Living <br />
+                        Spaces
+                      </h3>
+                      <p class="_sm">
+                        Create inviting outdoor living areas that blend
+                        seamlessly with your surroundings.
+                      </p>
+                      <div class="services__item-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="hero__inner-box">
-            <h1>
-              Transforming Spaces,
-              <br>
-              Building Dreams
-            </h1>
-            <p>
-              Unlock the Potential of Your Home with Better Builders:
-              Where Imagination Meets Construction Excellence
-            </p>
+        </section>
+        <!-- #services end -->
+        <!-- #testimonials -->
+        <section class="testimonials">
+          <div class="autoContainer">
+            <div class="testimonials__inner">
+              <div class="testimonials__inner-title title">
+                <h4>TESTIMONIALS</h4>
+                <h2>Building Trust, Crafting Excellence</h2>
+              </div>
+              <div class="testimonials__inner-swiper">
+                <div class="swiper" data-swiper="testimonials">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonials__item">
+                      <div class="testimonials__item-image">
+                        <img
+                          src="images/testimonials/tesitiomials-1.png"
+                          alt="tesitiomials-1"
+                        />
+                      </div>
+                      <div class="testimonials__item-content">
+                        <h6>Sarah D</h6>
+                        <p class="_sm">
+                          Better Builders turned our outdated kitchen into a
+                          stunning culinary masterpiece. Their team's expertise
+                          and creativity transformed the...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide testimonials__item">
+                      <div class="testimonials__item-image">
+                        <img
+                          src="images/testimonials/tesitiomials-2.png"
+                          alt="tesitiomials-2"
+                        />
+                      </div>
+                      <div class="testimonials__item-content">
+                        <h6>Mark and Jennifer S</h6>
+                        <p class="_sm">
+                          We hired Better Builders for a major renovation pr-
+                          oject, and they delivered exceptional results. Their
+                          communication throughout the process was...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide testimonials__item">
+                      <div class="testimonials__item-image">
+                        <img
+                          src="images/testimonials/tesitiomials-3.png"
+                          alt="tesitiomials-3"
+                        />
+                      </div>
+                      <div class="testimonials__item-content">
+                        <h6>Alex W</h6>
+                        <p class="_sm">
+                          Better Builders exceeded our expectations with th- eir
+                          expertise in creating outdoor living spaces. Our new
+                          deck and patio have become the heart...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide testimonials__item">
+                      <div class="testimonials__item-image">
+                        <img
+                          src="images/testimonials/tesitiomials-1.png"
+                          alt="tesitiomials-1"
+                        />
+                      </div>
+                      <div class="testimonials__item-content">
+                        <h6>Sarah D</h6>
+                        <p class="_sm">
+                          Better Builders turned our outdated kitchen into a
+                          stunning culinary masterpiece. Their team's expertise
+                          and creativity transformed the...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="hero__inner-buttons">
-            <a href="tel:818-688-1319" class="button button--primary">Get a quote</a>
+        </section>
+        <!-- #testimonials end -->
+      </section>
+      <!-- #projects -->
+      <section class="projects">
+        <div class="autoContainer">
+          <div class="projects__inner">
+            <div class="projects__inner-title title">
+              <h4>OUR PROJECTS</h4>
+              <h2>Building Trust, Crafting Excellence</h2>
+            </div>
+            <div class="projects__inner-row">
+              <div class="projects__inner-link"></div>
+              <div class="projects__inner-link"></div>
+              <div class="projects__inner-link"></div>
+              <div class="projects__inner-link"></div>
+              <div class="projects__inner-link"></div>
+              <div class="projects__inner-link"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- #hero end -->
-    
-    <!-- #footer -->
-    <footer class="footer">
-      <div class="autoContainer">
-        <div class="footer__inner"></div>
-      </div>
-    </footer>
-    <!-- #footer end -->
-  </div>
-  <script src="js/main.js"></script>
-  <script src="js/customSelect.js"></script>
-</body>
-
+      </section>
+      <!-- #projects end -->
+      <!-- #projects -->
+      <section class="projects">
+        <div class="autoContainer">
+          <div class="projects__inner">
+            <div class="projects__inner-title title">
+              <h4>OUR PROJECTS</h4>
+              <h2>Building Trust, Crafting Excellence</h2>
+            </div>
+            <div class="projects__inner-swiper">
+              <div class="swiper" data-swiper="projects">
+                <div class="swiper-wrapper">
+                  <div class="projects__item swiper-slide">
+                    <div class="projects__item-image">
+                      <div class="ratioImage">
+                        <img
+                          src="images/projects/project-1.png"
+                          alt="project-1"
+                        />
+                      </div>
+                    </div>
+                    <div class="projects__item-content">
+                      <div class="projects__item-content-title">
+                        <strong>Remodeling and Renovations</strong>
+                        <h3>Modern Oasis Retreat:</h3>
+                        <small>Feb 10, 2021</small>
+                      </div>
+                      <p class="_sm">
+                        Step into this breathtaking modern oasis, where clean
+                        lines, minimalist design, and harmonious elements blend
+                        seamlessly.
+                      </p>
+                      <div class="projects__item-content-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projects__item swiper-slide">
+                    <div class="projects__item-image">
+                      <div class="ratioImage">
+                        <img
+                          src="images/projects/project-2.png"
+                          alt="project-2"
+                        />
+                      </div>
+                    </div>
+                    <div class="projects__item-content">
+                      <div class="projects__item-content-title">
+                        <strong>Remodeling and Renovations</strong>
+                        <h3>Coastal Dream Home</h3>
+                        <small>May 27, 2022</small>
+                      </div>
+                      <p class="_sm">
+                        Explore the charm of coastal living embod ied in this
+                        stunning dream home. Immers- e yourself in
+                        coastal-inspired architecture
+                      </p>
+                      <div class="projects__item-content-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projects__item swiper-slide">
+                    <div class="projects__item-image">
+                      <div class="ratioImage">
+                        <img
+                          src="images/projects/project-3.png"
+                          alt="project-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="projects__item-content">
+                      <div class="projects__item-content-title">
+                        <strong>Remodeling and Renovations</strong>
+                        <h3>Historic Restoration</h3>
+                        <small>June 30, 2022</small>
+                      </div>
+                      <p class="_sm">
+                        Witness the revival of a historic gem throu- gh
+                        meticulous restoration. Experience the preservation of
+                        architectural heritage.
+                      </p>
+                      <div class="projects__item-content-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projects__item swiper-slide">
+                    <div class="projects__item-image">
+                      <div class="ratioImage">
+                        <img
+                          src="images/projects/project-4.png"
+                          alt="project-4"
+                        />
+                      </div>
+                    </div>
+                    <div class="projects__item-content">
+                      <div class="projects__item-content-title">
+                        <strong>Remodeling and Renovations</strong>
+                        <h3>Contemporary Urban Loft</h3>
+                        <small>Sep 20, 2022</small>
+                      </div>
+                      <p class="_sm">
+                        Dive into the contemporary elegance and urban
+                        sophistication of this stylish loft. Discover innovative
+                        design concepts
+                      </p>
+                      <div class="projects__item-content-footer">
+                        <button class="button button--text">
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #projects end -->
+      <!-- #contact -->
+      <section class="contact">
+        <div class="autoContainer">
+          <div class="contact__inner">
+            <div class="contact__inner-title title">
+              <h4>CONTACT US</h4>
+              <h2>
+                Love to hear from you, <br />
+                Get in touch
+              </h2>
+            </div>
+            <form action="">
+              <div class="contact__inner-row">
+                <div class="input__group">
+                  <label for="name">Your Name</label>
+                  <div class="input input">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Type your name"
+                    />
+                  </div>
+                </div>
+                <div class="input__group">
+                  <label for="email">Your Email</label>
+                  <div class="input input">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Type your email"
+                    />
+                  </div>
+                </div>
+                <div class="input__group">
+                  <label for="">What are you interested in?</label>
+                  <div class="input input--select">
+                    <input type="hidden" />
+                    <div class="input__selected">
+                      <i>Select your interested field</i>
+                    </div>
+                    <ul class="input__dropdown">
+                      <li class="input__dropdown-item">item 1</li>
+                      <li class="input__dropdown-item">item 2</li>
+                      <li class="input__dropdown-item">item 3</li>
+                      <li class="input__dropdown-item">item 3</li>
+                      <li class="input__dropdown-item">item 3</li>
+                      <li class="input__dropdown-item">item 4</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="input__group">
+                  <label for="">Project Budget</label>
+                  <div class="input input--select">
+                    <input type="hidden" />
+                    <div class="input__selected">
+                      <i>Select Budget</i>
+                    </div>
+                    <ul class="input__dropdown">
+                      <li class="input__dropdown-item">item 5</li>
+                      <li class="input__dropdown-item">item 6</li>
+                      <li class="input__dropdown-item">item 7</li>
+                      <li class="input__dropdown-item">item 8</li>
+                      <li class="input__dropdown-item">item 8</li>
+                      <li class="input__dropdown-item">item 8</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="input__group _wide">
+                  <label for="message">Message</label>
+                  <div class="input">
+                    <textarea name="message" id="message" rows="10"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__inner-footer">
+                <button type="button" class="button button--primary">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- #contact end -->
+      <!-- #footer -->
+      <footer class="footer">
+        <div class="autoContainer _lg">
+          <div class="footer__inner">
+            <div class="footer__inner-info">
+              <div class="logo">
+                <img src="images/logo.png" alt="better-builders" />
+              </div>
+              <ul class="footer__inner-info-list">
+                <li>
+                  <a id="contactEmail" href="mailto:info@betterbuilders.com">
+                    <strong>Email:</strong> info@betterbuilders.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+1 (555) 123-4567"
+                    ><strong>Phone:</strong> +1 (555) 123-4567</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <strong> Address: </strong> 123 Main Street, Anytown, USA</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__inner-links">
+              <div class="footer__inner-links-column">
+                <h3>General</h3>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Projects</a>
+                <a href="#">Testimonials</a>
+              </div>
+              <div class="footer__inner-links-column">
+                <h3>Services</h3>
+                <a href="#"> Residential Construction </a>
+                <a href="#"> Remodeling and Renovations </a>
+                <a href="#"> Kitchen and Bathroom Upgrades </a>
+                <a href="#"> Outdoor Living Spaces </a>
+                <a href="#"> Interior Design and Styling </a>
+              </div>
+            </div>
+            <form class="footer__inner-form">
+              <h3>Sign Up to our News Letter</h3>
+              <form action="#">
+                <div class="footer__inner-form-column">
+                  <div class="input input--line">
+                    <input type="text" placeholder="Your Name" />
+                  </div>
+                  <div class="input input--line">
+                    <input type="text" placeholder="Your Email" />
+                  </div>
+                  <div class="footer__inner-form-group _bottom">
+                    <button type="submit" class="button button--primary _lg">
+                      SIGN UP
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </form>
+          </div>
+          <div class="footer__copyright">
+            <div class="button__wrapper">
+              <a href="#" class="button button--ico">
+                <span class="ico">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.9998 37.9998C13.9249 37.9998 9.15369 36.0234 5.56494 32.4348C1.9762 28.8461 -0.00012207 24.0748 -0.00012207 18.9999C-0.00012207 13.925 1.9762 9.15374 5.56494 5.56503C9.15369 1.97637 13.9249 0 18.9998 0C24.0751 0 28.8464 1.97637 32.4349 5.56503C36.0234 9.15363 37.9996 13.9249 37.9996 18.9999C37.9996 24.0749 36.0234 28.8462 32.4349 32.4348C28.8464 36.0234 24.0751 37.9998 18.9998 37.9998ZM20.4038 21.6756V27.9549C24.8099 27.2624 28.0088 23.5198 28.0088 19.0548C28.0088 14.0872 23.9673 10.0458 18.9998 10.0458C14.0322 10.0458 9.99072 14.0872 9.99072 19.0548C9.99072 23.5177 13.1892 27.2604 17.5958 27.954V21.6756H15.3143V19.0773H17.5958V17.0982C17.5958 14.9094 18.8645 13.6026 20.9896 13.6026C21.9561 13.6026 22.991 13.7764 23.0012 13.7781V15.9894H21.868C20.5941 15.9894 20.4038 16.869 20.4038 17.3934V19.0782H22.8967L22.498 21.6756H20.4038Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="#" class="button button--ico">
+                <span class="ico">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.9998 37.9998C13.9249 37.9998 9.15369 36.0234 5.56494 32.4348C1.9762 28.8461 -0.00012207 24.0748 -0.00012207 18.9999C-0.00012207 13.925 1.9762 9.15374 5.56494 5.56503C9.15369 1.97637 13.9249 0 18.9998 0C24.0751 0 28.8464 1.97637 32.4349 5.56503C36.0234 9.15363 37.9996 13.9249 37.9996 18.9999C37.9996 24.0749 36.0234 28.8462 32.4349 32.4348C28.8464 36.0234 24.0751 37.9998 18.9998 37.9998ZM18.9998 10.0224C16.5865 10.0224 16.2662 10.0327 15.2981 10.0764C13.6866 10.1506 12.4185 10.6393 11.5289 11.529C10.6393 12.4186 10.1505 13.6867 10.0763 15.2982C10.0326 16.2663 10.0222 16.5867 10.0222 18.9999C10.0222 21.4131 10.0326 21.7335 10.0763 22.7016C10.1505 24.3138 10.6393 25.582 11.5289 26.4708C12.4194 27.3614 13.6876 27.8502 15.2981 27.9234C16.2466 27.9671 16.5632 27.9774 18.9998 27.9774C21.4363 27.9774 21.7529 27.9671 22.7014 27.9234C24.3118 27.8503 25.58 27.3615 26.4707 26.4708C27.3615 25.5801 27.8501 24.3119 27.9232 22.7016C27.9669 21.755 27.9773 21.4387 27.9773 18.9999C27.9773 16.5611 27.9669 16.2449 27.9232 15.2982C27.8501 13.6879 27.3615 12.4198 26.4707 11.529C25.5802 10.6385 24.312 10.1497 22.7014 10.0764C21.7333 10.0327 21.413 10.0224 18.9998 10.0224ZM18.9998 26.3601C16.5997 26.3601 16.3162 26.351 15.3718 26.3079C14.1772 26.2533 13.2692 25.9233 12.6727 25.3269C12.0686 24.7227 11.7477 23.8398 11.6918 22.6278C11.6487 21.6826 11.6395 21.3989 11.6395 18.9999C11.6395 16.6009 11.6487 16.3172 11.6918 15.372C11.7461 14.1777 12.0762 13.2696 12.6727 12.6729C13.2856 12.0601 14.1433 11.7484 15.3718 11.6919C16.3162 11.6488 16.5997 11.6397 18.9998 11.6397C21.3999 11.6397 21.6835 11.6488 22.6277 11.6919C23.8396 11.7477 24.7224 12.0685 25.3268 12.6729C25.9397 13.2859 26.2515 14.1436 26.3077 15.372C26.3508 16.3172 26.36 16.6009 26.36 18.9999C26.36 21.3989 26.3508 21.6826 26.3077 22.6278C26.2529 23.8387 25.932 24.7216 25.3268 25.3269C24.7137 25.9399 23.8562 26.2516 22.6277 26.3079C21.6835 26.351 21.3999 26.3601 18.9998 26.3601ZM18.9998 14.3901C16.4579 14.3901 14.39 16.4581 14.39 18.9999C14.39 21.5418 16.4579 23.6097 18.9998 23.6097C21.5416 23.6097 23.6096 21.5418 23.6096 18.9999C23.6096 16.4581 21.5416 14.3901 18.9998 14.3901ZM23.7922 13.1301C23.1982 13.1301 22.715 13.6134 22.715 14.2074C22.715 14.8014 23.1982 15.2847 23.7922 15.2847C24.3864 15.2847 24.8696 14.8014 24.8696 14.2074C24.8696 13.6134 24.3864 13.1301 23.7922 13.1301ZM18.9998 21.9924C17.3497 21.9924 16.0073 20.65 16.0073 18.9999C16.0073 17.3498 17.3497 16.0074 18.9998 16.0074C20.6499 16.0074 21.9923 17.3498 21.9923 18.9999C21.9923 20.65 20.6499 21.9924 18.9998 21.9924Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="#" class="button button--ico">
+                <span class="ico">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.9998 37.9998C13.9249 37.9998 9.15369 36.0234 5.56494 32.4348C1.9762 28.8461 -0.00012207 24.0748 -0.00012207 18.9999C-0.00012207 13.925 1.9762 9.15374 5.56494 5.56503C9.15369 1.97637 13.9249 0 18.9998 0C24.0751 0 28.8464 1.97637 32.4349 5.56503C36.0234 9.15363 37.9996 13.9249 37.9996 18.9999C37.9996 24.0749 36.0234 28.8462 32.4349 32.4348C28.8464 36.0234 24.0751 37.9998 18.9998 37.9998ZM15.2521 27.9513L15.2531 27.9523V27.9549C22.6327 27.9539 27.0421 21.9603 27.0421 16.1658C27.0421 15.9901 27.0421 15.8085 27.0305 15.6303C27.8441 15.0425 28.5396 14.3212 29.0978 13.4856C28.3401 13.8207 27.5388 14.04 26.7173 14.139C27.5817 13.6209 28.2288 12.8074 28.5388 11.8467C27.7208 12.3317 26.835 12.6695 25.9072 12.852C25.1267 12.0217 24.0258 11.5457 22.8856 11.5457C21.8263 11.5457 20.8176 11.9457 20.0455 12.672C18.9735 13.6813 18.5143 15.1983 18.8468 16.6311C15.5198 16.4639 12.4077 14.8856 10.3076 12.3021C9.21069 14.1897 9.77368 16.619 11.5909 17.8326C10.9342 17.8138 10.2839 17.6339 9.70996 17.3142V17.3664C9.70996 19.3309 11.1082 21.039 13.0345 21.4281C12.677 21.5251 12.3104 21.5733 11.9451 21.5733C11.6835 21.5733 11.4205 21.5484 11.1635 21.4992C11.7061 23.1864 13.2612 24.3432 15.0344 24.3765C13.5751 25.5233 11.7504 26.154 9.89709 26.154H9.88904C9.55798 26.1531 9.2262 26.1328 8.90271 26.0937C10.7952 27.3083 12.9844 27.9513 15.2344 27.9513L15.2521 27.9513Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="#" class="button button--ico">
+                <span class="ico">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.9998 37.9998C13.9249 37.9998 9.15369 36.0234 5.56494 32.4348C1.9762 28.8461 -0.00012207 24.0748 -0.00012207 18.9999C-0.00012207 13.925 1.9762 9.15374 5.56494 5.56503C9.15369 1.97637 13.9249 0 18.9998 0C24.0751 0 28.8464 1.97637 32.4349 5.56503C36.0234 9.15363 37.9996 13.9249 37.9996 18.9999C37.9996 24.0749 36.0234 28.8462 32.4349 32.4348C28.8464 36.0234 24.0751 37.9998 18.9998 37.9998ZM18.9998 11.8845C18.9366 11.8845 12.6655 11.8894 11.1077 12.3093C10.2386 12.5434 9.55481 13.2321 9.323 14.1066C8.90491 15.674 8.90002 18.9668 8.90002 18.9999C8.90002 19.033 8.90491 22.3258 9.323 23.8932C9.55518 24.7679 10.2394 25.4566 11.1085 25.6905C12.6655 26.1104 18.9366 26.1153 18.9998 26.1153C19.0629 26.1153 25.334 26.1104 26.8918 25.6905C27.7601 25.4566 28.4443 24.7679 28.6775 23.8932C29.0947 22.3258 29.0996 19.033 29.0996 18.9999C29.0996 18.9668 29.0947 15.674 28.6765 14.1066C28.4443 13.2319 27.7601 12.5432 26.891 12.3093C25.334 11.8894 19.0629 11.8845 18.9998 11.8845ZM16.9343 22.0041V22.0024V15.9957L22.2136 18.9999L16.9358 22.0033L16.9343 22.0041Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <p>©️ 2023 Copyright. Better Builders All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/customSelect.js"></script>
+    <script src="js/swiper.js"></script>
+  </body>
 </html>

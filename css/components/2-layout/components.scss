@@ -1,29 +1,19 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  min-height: 100%;
-}
-.autoContainer {
-  max-width: 1760px;
-  margin: 0 auto;
-  padding: 0 60px;
-  &._lg {
-    max-width: 1820px;
-  }
-}
 .input {
   display: flex;
   width: 100%;
   font-size: 22px;
+
   input,
   textarea,
   &__selected {
     padding: 1.35em 1.85em;
     width: 100%;
-    border: 2px solid $white;
+    border: 2px solid $white-2;
+    border-radius: 8px;
+    background: $white-2;
     resize: none;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
+
     //font
     color: $black-2;
     font-family: $font-primary;
@@ -31,17 +21,30 @@
     font-weight: 500;
     font-size: inherit;
     line-height: 1;
-    @include transition;
+
     &::placeholder {
-      color: $black-3;
-      @include transition;
+      transition: 0.2s ease-out;
+
+      color: rgba($black-2, 0.5);
+      font-style: normal;
+      font-weight: 500;
     }
   }
   input:focus,
   textarea:focus {
     border-color: $primary;
     &::placeholder {
-      opacity: 0.7;
+      color: rgba($black-2, 0.25);
+    }
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    label {
+      font-weight: 500;
+      font-size: 1em;
     }
   }
   &--select {
@@ -52,9 +55,14 @@
       &__selected {
         cursor: pointer;
         transition-delay: 0.25s;
-        border-radius: 7px;
-        background: $white-2;
-        border-radius: 0.45em 0.45em;
+        border-radius: 8px;
+
+        i {
+          color: rgba($black-2, 0.5);
+          font-style: normal;
+          font-weight: 500;
+        }
+
         &:hover {
           opacity: 0.7;
         }
@@ -68,7 +76,7 @@
           width: 17px;
           height: 15px;
           display: inline-block;
-          transform: translateY(-50%);
+          transform: translateY(-30%);
           transition: 0.3s ease;
           background-image: url("../images/icons/arrow-down.svg");
           background-repeat: no-repeat;
@@ -79,34 +87,36 @@
         position: absolute;
         top: calc(100% - 3px);
         width: 100%;
+        z-index: 1;
         max-height: 0;
         opacity: 0;
         overflow: hidden;
-        background-color: $white;
         border: 2px solid transparent;
-        color: $black-2;
-        box-sizing: border-box;
         border-top: unset;
         transition: max-height 0.3s ease, border-color 0s ease 0.3s,
           opacity 0.1s ease 0.2s;
+        border-radius: 0 0 8px 8px;
+        background: $white-2;
         @include hideScroll;
-        z-index: 1;
+
+        font-size: inherit;
+
+        //display
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        border-radius: 0 0 0.45em 0.45em;
-        background: $white-2;
+        font-size: inherit;
         font-weight: 600;
-        padding: 1.35em 1.85em;
+
         &-item {
           cursor: pointer;
           transition: 0.3s ease-out;
           font-weight: 500;
+
+          padding: 0.8em 1.85em;
+
           &:hover {
-            opacity: 0.7;
-          }
-          &:first-child {
-            border-top: unset;
+            color: $secondary;
+            background: rgba($secondary, 0.05);
           }
         }
       }
@@ -117,15 +127,15 @@
         border-color: $primary;
         transition-duration: 0.1s;
         transition-delay: 0s;
-        border-radius: 0.45em 0.45em 0 0;
+        border-radius: 8px 8px 0 0;
 
         &::after {
-          top: 47%;
-          transform: translateY(-50%) rotate(180deg);
+          top: 50%;
+          transform: translateY(-70%) rotate(180deg);
         }
       }
       &__dropdown {
-        border-radius: 0 0 7px 7px;
+        border-radius: 0 0 8px 8px;
         top: 100%;
         max-height: 30vh;
         overflow-y: auto;
@@ -136,24 +146,6 @@
       }
     }
   }
-  &--text {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    input {
-      border-radius: 0.45em;
-      background: $white-2;
-    }
-    label {
-      font-weight: 500;
-      font-size: 1em;
-    }
-    textarea {
-      border-radius: 0.45em;
-      min-height: 280px;
-      background: $white-2;
-    }
-  }
   &--line {
     input {
       background: unset;
@@ -162,14 +154,16 @@
       border-width: 0 0 2px 0;
       font-weight: 500;
       color: $white;
+      border-radius: 0;
+
       &::placeholder {
-        color: $white;
+        color: rgba($white, 0.5);
         font-weight: 400;
       }
       &:focus {
         border-color: $white;
         &::placeholder {
-          opacity: 0.7;
+          color: rgba($white, 0.3);
         }
       }
     }
@@ -182,6 +176,7 @@
   justify-content: center;
   padding: 1.05em 1.63em;
   border: 2px solid transparent;
+  gap: 0.5em;
 
   color: $white;
   font-style: normal;
@@ -192,12 +187,21 @@
   font-family: $font-primary;
   text-transform: uppercase;
 
+  &__ico {
+    width: 0.8em;
+    height: 0.8em;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
   &--primary {
     background: $primary;
     &._lg {
       padding: 1.05em 4.45em;
     }
-    &:hover{
+    &:hover {
       background: rgba($primary, 0.7);
     }
   }
@@ -205,8 +209,23 @@
     background: transparent;
     border-color: $white;
     padding: 1.05em 1.45em;
-    &:hover{
+    &:hover {
       background: $white-3;
+    }
+  }
+  &--text {
+    position: relative;
+    padding: 0 0.2em;
+    color: inherit;
+
+    //font
+    color: $black-2;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $primary-2;
     }
   }
   &:active {
@@ -541,15 +560,16 @@
     object-fit: contain;
   }
 }
-.title{
+.title {
   display: flex;
-flex-direction: column;
-gap: 15px;
-  h2{
+  flex-direction: column;
+  gap: 5px;
+  h2 {
     font-weight: 700;
     line-height: 1.5;
   }
-  h4{
+  h4 {
+    font-weight: 600;
     color: $black-4;
   }
 }
@@ -558,39 +578,38 @@ gap: 15px;
   .button {
     font-size: 18px;
   }
-  .input{
+  .input {
     font-size: 20px;
   }
 }
-@mixin components-1025{
+@mixin components-1025 {
   .button {
     font-size: 16px;
   }
-  .input{
+  .input {
     font-size: 18px;
-    &--line{
-      input{
-      padding: 20px 0;
+    &--line {
+      input {
+        padding: 20px 0;
       }
     }
   }
 }
-@mixin components-580{
-.title{
-  gap: 10px;
+@mixin components-580 {
+  .title {
+    gap: 10px;
+  }
 }
-}
-@mixin components-460{
+@mixin components-460 {
   .button {
     font-size: 14px;
   }
-  .input{
+  .input {
     font-size: 16px;
-    &--line{
-      input{
-      padding: 15px 0;
+    &--line {
+      input {
+        padding: 15px 0;
       }
     }
   }
-
 }
