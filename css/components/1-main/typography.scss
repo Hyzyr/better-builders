@@ -1,6 +1,5 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* Typography */
 h1 {
@@ -17,16 +16,16 @@ h4 {
 }
 h5 {
   font-size: 22px;
-  &._lg{
+  &._lg {
     font-size: 23px;
   }
 }
 h6 {
   font-size: 18px;
-  &._lg{
+  &._lg {
     font-size: 20px;
   }
-  &._sm{
+  &._sm {
     font-size: 17px;
   }
 }
@@ -43,8 +42,86 @@ h6 {
 
 p {
   font-size: 24px;
-  &._sm{
+  &._sm {
     font-size: 18px;
   }
   line-height: 1.8em;
+}
+
+@mixin typography-1550 {
+  h2 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+@mixin typography-1280 {
+  h3 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+@mixin typography-1160 {
+  h2 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+@mixin typography-1025 {
+  h3 {
+    font-size: 22px;
+  }
+}
+@mixin typography-768 {
+  h3 {
+    font-size: 20px;
+  }
+}
+@mixin typography-580{
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p{
+    font-size: 16px;
+  }
+
+}
+@mixin typography-460 {
+  h3 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+@mixin typography-390{
+  h2 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+
 }
