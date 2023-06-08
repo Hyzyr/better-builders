@@ -433,10 +433,8 @@ svg {
   border-top: unset;
   -webkit-transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
   transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
-  scrollbar-width: none;
-  /* Firefox 64 */
-  -ms-overflow-style: none;
-  /* Internet Explorer 11 */
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,8 +449,7 @@ svg {
   font-weight: 600;
   padding: 1.35em 1.85em;
 }
-.input--select .input__dropdown::-webkit-scrollbar {
-  /** WebKit */
+.input--select .input__dropdown::-webkit-scrollbar { /** WebKit */
   display: none;
 }
 .input--select .input__dropdown-item {
@@ -1116,6 +1113,84 @@ svg {
   min-width: 50px;
 }
 
+.hero {
+  position: relative;
+  padding: 200px 0 160px 0;
+  margin-bottom: 50px;
+}
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+.hero__bg-fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+.hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+  color: #fff;
+  min-height: calc(95vh - 360px);
+  width: 63%;
+}
+.hero__inner .logo {
+  font-size: 49px;
+}
+.hero__inner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.hero__inner h1 {
+  font-weight: 600;
+}
+.hero__inner p {
+  font-weight: 400;
+}
+.hero__inner-license {
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 130%;
+}
+.hero__inner-buttons .button {
+  min-width: 50px;
+}
+
 @media (max-width: 1160px) {
   .autoContainer {
     padding: 0 40px;
@@ -1125,7 +1200,6 @@ svg {
   .autoContainer {
     padding: 0 30px;
   }
-
   .header {
     padding: 25px 0;
   }
@@ -1141,7 +1215,6 @@ svg {
     display: block;
     z-index: 2;
   }
-
   .nav {
     position: fixed;
     top: 0;
