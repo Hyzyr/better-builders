@@ -7,6 +7,7 @@
   @include header-1390;
   @include footer-1390;
   @include index-1390;
+  @include blog-1390;
 }
 @media (max-width: 1280px) {
   @include header-1280;
@@ -20,8 +21,8 @@
     padding: 0 40px;
   }
   @include footer-1160;
-  @include index-1160;
   @include typography-1160;
+  @include index-1160;
 }
 @media (max-width: 1025px) {
   html,
@@ -36,6 +37,7 @@
   @include typography-1025;
   @include components-1025;
   @include index-1025;
+  @include blog-1025;
 }
 
 @media (max-width: 940px) {
@@ -49,6 +51,10 @@
 @media (max-width: 840px) {
   @include footer-840;
 }
+@media (min-width: 768px) {
+  @include index-min-768;
+}
+
 @media (max-width: 768px) {
   html,
   body {
@@ -73,6 +79,7 @@
   @include typography-580;
   @include components-580;
   @include index-580;
+  @include blog-580;
 }
 @media (max-width: 460px) {
   @include header-460;

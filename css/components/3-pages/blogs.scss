@@ -1,0 +1,154 @@
+.blog {
+  padding: 0 0 50px 0;
+
+  &__inner {
+    position: relative;
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+      &-space {
+        width: 40%;
+        max-width: 650px;
+      }
+    }
+    &-row & {
+      &-content {
+        width: calc(60% - 35px);
+        max-width: 845px;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      max-width: 845px;
+    }
+  }
+  &__gallery {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    max-width: 650px;
+
+    //display
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &-image {
+      .swiper {
+        &-slide {
+          height: unset !important;
+        }
+      }
+      &-item {
+        //   padding-bottom: ;
+      }
+    }
+    &-thumbs {
+      .swiper {
+        margin: -10px;
+        padding: 10px;
+
+        &-slide {
+          height: unset !important;
+        }
+      }
+      &-item {
+        cursor: pointer;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 50%;
+          width: calc(100% + 10px);
+          height: calc(100% + 10px);
+          transform: translate(-50%, -50%);
+          border: 3px solid $primary;
+          opacity: 0;
+          transition: 0.3s ease-out 0.1s;
+        }
+        &.swiper-slide-thumb-active {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin blog-1390 {
+  .blog {
+    &__inner {
+      &-row {
+        &-space {
+          width: 45%;
+          max-width: unset;
+        }
+      }
+      &-row & {
+        &-content {
+          width: calc(55% - 30px);
+          max-width: 620px;
+        }
+      }
+    }
+    &__gallery {
+      width: 45%;
+      max-width: unset;
+    }
+  }
+}
+@mixin blog-1025 {
+  .blog {
+    &__inner {
+      &-row {
+        &-space {
+          display: none;
+        }
+      }
+      &-row & {
+        &-content {
+          width: 100%;
+          max-width: unset;
+        }
+      }
+    }
+    &__gallery {
+      position: unset;
+      width: 100%;
+      padding: 1rem;
+      background: rgba($gray, 0.05);
+      &-image {
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@mixin blog-580 {
+  .blog {
+    &__gallery {
+      padding: 0;
+      background: transparent;
+
+      &-thumbs {
+        &-item {
+          &::after {
+            width: calc(100% + 6px);
+            height: calc(100% + 6px);
+            border-width: 2px;
+          }
+        }
+      }
+    }
+  }
+}
