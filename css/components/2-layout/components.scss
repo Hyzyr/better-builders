@@ -595,12 +595,7 @@
     }
   }
 }
-@mixin components-580 {
-  .title {
-    gap: 10px;
-  }
-}
-@mixin components-460 {
+@mixin components-768 {
   .button {
     font-size: 14px;
   }
@@ -608,8 +603,18 @@
     font-size: 16px;
     &--line {
       input {
-        padding: 15px 0;
+        padding: 1em 0;
       }
     }
+  }
+}
+@mixin components-580 {
+  .title {
+    gap: 10px;
+  }
+}
+@mixin components-460 {
+  .input {
+    font-size: 14px;
   }
 }

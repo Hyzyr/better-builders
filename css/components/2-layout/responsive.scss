@@ -1,30 +1,33 @@
 @media (max-width: 1550px) {
   @include footer-1550;
   @include typography-1550;
-  @include layouts-1550;
+  @include index-1550;
 }
 @media (max-width: 1390px) {
   @include header-1390;
   @include footer-1390;
-  @include layouts-1390;
+  @include index-1390;
 }
 @media (max-width: 1280px) {
   @include header-1280;
   @include footer-1280;
   @include components-1280;
   @include typography-1280;
-  @include layouts-1280;
+  @include index-1280;
 }
 @media (max-width: 1160px) {
   .autoContainer {
     padding: 0 40px;
   }
   @include footer-1160;
-  @include layouts-1160;
+  @include index-1160;
   @include typography-1160;
-
 }
 @media (max-width: 1025px) {
+  html,
+  body {
+    font-size: 18px;
+  }
   .autoContainer {
     padding: 0 30px;
   }
@@ -32,48 +35,54 @@
   @include footer-1025;
   @include typography-1025;
   @include components-1025;
-  @include layouts-1025;
+  @include index-1025;
 }
 
 @media (max-width: 940px) {
   .autoContainer {
     padding: 0 25px;
   }
+  @include typography-940;
+  @include index-940;
 }
 
 @media (max-width: 840px) {
   @include footer-840;
-  @include layouts-840;
-
 }
 @media (max-width: 768px) {
+  html,
+  body {
+    font-size: 16px;
+  }
   .autoContainer {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   @include header-768;
   @include footer-768;
   @include typography-768;
-
+  @include components-768;
+  @include index-768;
 }
 @media (max-width: 580px) {
   ._hideMob {
     display: none;
   }
+  .autoContainer {
+    padding: 0 15px;
+  }
   @include typography-580;
   @include components-580;
-  @include layouts-580;
+  @include index-580;
 }
 @media (max-width: 460px) {
   @include header-460;
   @include footer-460;
   @include components-460;
   @include typography-460;
-  @include layouts-460;
-
+  @include index-460;
 }
 @media (max-width: 390px) {
-  @include layouts-390;
   @include typography-390;
-
-
+  @include footer-390;
+  @include index-390;
 }
