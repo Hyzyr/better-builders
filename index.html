@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="images/logo-small.svg" />
+    <link rel="icon" href="images/logo-light.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -20,15 +20,15 @@
           <div class="header__inner">
             <div class="nav" id="menu">
               <div class="nav__inner">
-                <a href="#" class="nav__inner-link active">Home</a>
-                <a href="#" class="nav__inner-link">About us</a>
-                <a href="#" class="nav__inner-link">Services</a>
-                <a href="/projects.html" class="nav__inner-link">Projects</a>
-                <a href="#" class="nav__inner-link">Contact Us</a>
+                <a href="#home" class="nav__inner-link active">Home</a>
+                <a href="#about-us" class="nav__inner-link">About us</a>
+                <a href="#services" class="nav__inner-link">Services</a>
+                <a href="#projects" class="nav__inner-link">Projects</a>
+                <a href="#contact-us" class="nav__inner-link">Contact Us</a>
               </div>
             </div>
             <span class="logo">
-              <img src="images/logo.png" alt="Better Builders" />
+              <img src="images/logo-light.png" alt="Better Builders" />
             </span>
             <button class="burger" id="menuBtn"></button>
           </div>
@@ -36,6 +36,7 @@
       </header>
       <!-- #header end -->
       <!-- #hero -->
+      <section class="anchor" id="home"></section>
       <section class="hero">
         <div class="autoContainer _lg">
           <div class="hero__bg">
@@ -65,6 +66,7 @@
       </section>
       <!-- #hero end -->
       <!-- #about  -->
+      <section class="anchor" id="about-us"></section>
       <section class="about">
         <div class="autoContainer">
           <div class="about__inner">
@@ -121,6 +123,7 @@
         </div>
       </section>
       <!-- #about end -->
+      <section class="anchor" id="services"></section>
       <section class="bg bg--st">
         <div class="bg__image">
           <img
@@ -155,12 +158,15 @@
                         expert team will bring your dream home to life
                       </p>
                       <div class="services__item-footer">
-                        <button class="button button--text">
+                        <a
+                          href="projects/home-office.html"
+                          class="button button--text"
+                        >
                           View More
                           <span class="button__ico">
                             <img src="images/icons/arrow-right.svg" alt="" />
                           </span>
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-slide services__item">
@@ -179,12 +185,12 @@
                         space through our remodeling and renovation.
                       </p>
                       <div class="services__item-footer">
-                        <button class="button button--text">
+                        <a href="projects/adu.html" class="button button--text">
                           View More
                           <span class="button__ico">
                             <img src="images/icons/arrow-right.svg" alt="" />
                           </span>
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-slide services__item">
@@ -203,12 +209,15 @@
                         design and remodeling solutions.
                       </p>
                       <div class="services__item-footer">
-                        <button class="button button--text">
+                        <a
+                          href="projects/kitchen.html"
+                          class="button button--text"
+                        >
                           View More
                           <span class="button__ico">
                             <img src="images/icons/arrow-right.svg" alt="" />
                           </span>
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div class="swiper-slide services__item">
@@ -227,12 +236,69 @@
                         seamlessly with your surroundings.
                       </p>
                       <div class="services__item-footer">
-                        <button class="button button--text">
+                        <a
+                          href="projects/outdoor.html"
+                          class="button button--text"
+                        >
                           View More
                           <span class="button__ico">
                             <img src="images/icons/arrow-right.svg" alt="" />
                           </span>
-                        </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide services__item">
+                      <div class="services__item-icon">
+                        <img
+                          src="images/services/service-3.svg"
+                          alt="Kitchen and Bathroom Upgrades "
+                        />
+                      </div>
+                      <h3 class="services__item-title">
+                        Kitchen and Bathroom <br />
+                        Upgrades
+                      </h3>
+                      <p class="_sm">
+                        Upgrade your kitchen or bathroom with our comprehensive
+                        design and remodeling solutions.
+                      </p>
+                      <div class="services__item-footer">
+                        <a
+                          href="projects/bathroom.html"
+                          class="button button--text"
+                        >
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide services__item">
+                      <div class="services__item-icon">
+                        <img
+                          src="images/services/service-4.svg"
+                          alt="Outdoor Living Spaces"
+                        />
+                      </div>
+                      <h3 class="services__item-title">
+                        Exquisite Staircase <br />
+                        Transformation
+                      </h3>
+                      <p class="_sm">
+                        Experience the Perfect Fusion of Elegance and
+                        Functionality in Our Thoughtfully Designed Staircase.
+                      </p>
+                      <div class="services__item-footer">
+                        <a
+                          href="projects/staircase.html"
+                          class="button button--text"
+                        >
+                          View More
+                          <span class="button__ico">
+                            <img src="images/icons/arrow-right.svg" alt="" />
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -326,6 +392,7 @@
         <!-- #testimonials end -->
       </section>
       <!-- #projects -->
+      <section class="anchor" id="projects"></section>
       <section class="projects">
         <div class="autoContainer">
           <div class="projects__inner">
@@ -334,37 +401,37 @@
               <h2>Building Trust, Crafting Excellence</h2>
             </div>
             <div class="projects__inner-row">
-              <div class="projects__inner-link">
+              <div class="projects__inner-link" data-event="preview">
                 <img src="images/projects/grid-6.png" alt="grid-6" />
-                <strong>BATHROOM <small>REMODELING</small></strong>
+                <strong>ADU Project <small>- Enlarge Image -</small></strong>
               </div>
-              <div class="projects__inner-link">
+              <div class="projects__inner-link" data-event="preview">
                 <img src="images/projects/grid-1.png" alt="grid-1" />
-                <strong>BATHROOM <small>REMODELING</small></strong>
+                <strong>BATHROOM <small>- Enlarge Image -</small></strong>
               </div>
-              <div class="projects__inner-link">
+              <div class="projects__inner-link" data-event="preview">
                 <img src="images/projects/grid-2.png" alt="grid-2" />
-                <strong>BATHROOM <small>REMODELING</small></strong>
+                <strong>Kitchen <small>- Enlarge Image -</small></strong>
               </div>
-              <div class="projects__inner-link">
+              <div class="projects__inner-link" data-event="preview">
                 <img src="images/projects/grid-3.png" alt="grid-3" />
-                <strong>BATHROOM <small>REMODELING</small></strong>
+                <strong>Renovation <small>- Enlarge Image -</small></strong>
               </div>
-              <div class="projects__inner-link">
+              <div class="projects__inner-link" data-event="preview">
                 <img src="images/projects/grid-4.png" alt="grid-4" />
-                <strong>BATHROOM <small>REMODELING</small></strong>
+                <strong>Staircase <small>- Enlarge Image -</small></strong>
               </div>
-              <div class="projects__inner-link">
+              <div class="projects__inner-link" data-event="preview">
                 <img src="images/projects/grid-5.png" alt="grid-5" />
-                <strong>BATHROOM <small>REMODELING</small></strong>
+                <strong>Outdoor <small>- Enlarge Image -</small></strong>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- #projects end -->
-
       <!-- #contact -->
+      <section class="anchor" id="contact-us"></section>
       <section class="contact">
         <div class="autoContainer">
           <div class="contact__inner">
@@ -456,7 +523,7 @@
           <div class="footer__inner">
             <div class="footer__inner-info">
               <div class="logo">
-                <img src="images/logo.png" alt="better-builders" />
+                <img src="images/logo-light.png" alt="better-builders" />
               </div>
               <ul class="footer__inner-info-list">
                 <li>
@@ -479,18 +546,18 @@
             <div class="footer__inner-links">
               <div class="footer__inner-links-column">
                 <h3>General</h3>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Projects</a>
-                <a href="#">Testimonials</a>
+                <a href="#home">Home</a>
+                <a href="#about-us">About Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Testimonials</a>
               </div>
               <div class="footer__inner-links-column">
                 <h3>Services</h3>
-                <a href="#"> Residential Construction </a>
-                <a href="#"> Remodeling and Renovations </a>
-                <a href="#"> Kitchen and Bathroom Upgrades </a>
-                <a href="#"> Outdoor Living Spaces </a>
-                <a href="#"> Interior Design and Styling </a>
+                <a href="projects/home-office.html"> Residential Construction </a>
+                <a href="projects/adu.html"> Remodeling and Renovations </a>
+                <a href="projects/kitchen.html"> Kitchen and Bathroom Upgrades </a>
+                <a href="projects/outdoor.html"> Outdoor Living Spaces </a>
+                <a href="projects/staircase.html"> Interior Design and Styling </a>
               </div>
             </div>
             <form class="footer__inner-form">
@@ -581,9 +648,18 @@
       </footer>
       <!-- #footer end -->
     </div>
+    <div class="modal" id="imagePopup">
+      <div class="modal__inner">
+        <button class="modal-close"></button>
+        <div class="modal__inner-image">
+          <img src="images/projects/grid-6.png" alt="grid-6" />
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/customSelect.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/highlight-nav.js"></script>
   </body>
 </html>

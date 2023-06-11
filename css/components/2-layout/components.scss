@@ -243,24 +243,71 @@
   &--ico {
     padding: unset;
     position: relative;
-    background: $white;
     border-radius: 50%;
-    border-color: $primary;
+    color: $primary;
+    border: unset;
+    transition: all 0.6s ease;
+    z-index: 0;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+
+      transition: 0.3s ease-out;
+      transition-property: transform, width, height;
+      border-radius: inherit;
+      transform: translate(-50%, -50%);
+    }
+    &:before {
+      background: $white;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transition-timing-function: ease-in;
+    }
+    &:after {
+      width: 90%;
+      height: 90%;
+      z-index: -2;
+      background: rgba($primary, 0.3);
+      opacity: 0;
+    }
+
     .ico {
       width: 1.75em;
       height: 1.75em;
-      transition: all 0.3s ease;
+      color: inherit;
+
       svg {
         width: 100%;
         height: 100%;
-        fill: $primary;
-        transition: all 0.3s ease;
+        fill: currentColor;
       }
     }
     &:hover {
-      background: $primary;
-      svg {
-        fill: $white;
+      opacity: 1;
+
+      &::before {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+      &:after {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+    &:active {
+      &::before {
+        transform: translate(-50%, -50%) scale(0.9);
+        transition-duration: 0.1s;
+      }
+      &:after {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.4);
+        transition-duration: 0.1s;
       }
     }
   }
@@ -582,7 +629,13 @@
     color: $black-4;
   }
 }
-
+.anchor {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+}
 @mixin components-1280 {
   .button {
     font-size: 18px;

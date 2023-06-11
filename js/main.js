@@ -44,27 +44,41 @@ const toggleBody = (isClosed) => {
     document.body.classList.remove("active");
   }
 };
-document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
-  const tab = document.querySelector(eventBtn.getAttribute("data-tab"));
-  if (tab) {
-    eventBtn.onclick = (e) => {
-      e.preventDefault();
-      tab.classList.toggle("active");
-      toggleBody(tab.classList.contains("active"));
+const toggleModal = (eventBtn, modal, callbackFunc = null) => {
+  const closeButton = modal.querySelector(".modal-close");
+
+  eventBtn.onclick = (e) => {
+    e.preventDefault();
+    modal.classList.add("active");
+    body.classList.add("active");
+    if (callbackFunc) callbackFunc();
+  };
+
+  if (closeButton)
+    closeButton.onclick = (e) => {
+      modal.classList.remove("active");
+      body.classList.remove("active");
     };
-    tab.onclick = (e) => {
-      if (e.target === e.currentTarget) {
-        tab.classList.toggle("active");
-        toggleBody(tab.classList.contains("active"));
-      }
-    };
+  modal.onclick = (e) => {
+    if (e.target === e.currentTarget) {
+      modal.classList.remove("active");
+      body.classList.remove("active");
+    }
+  };
+};
+
+document.querySelectorAll('[data-event="preview"]').forEach((previewItem) => {
+  const modal = document.querySelector("#imagePopup");
+  const imgLink = previewItem.querySelector("img").src;
+  if (modal && imgLink) {
+    console.log("set onclick");
+    toggleModal(previewItem, modal, () => {
+      console.log("imgLink", imgLink);
+      modal.querySelector("img").src = imgLink;
+    });
   }
 });
-document.querySelectorAll(`[data-toggle]`).forEach((toggleBtn) => {
-  console.log("btn ->");
-  toggleBtn.onclick = () =>
-    toggleBtn.classList.toggle(toggleBtn.getAttribute("data-toggle"));
-});
+
 ///
 ///
 ///

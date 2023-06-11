@@ -29,7 +29,7 @@
     opacity: 0;
     transform: translateX(-50%);
   }
-  &.sticky {
+  &:not(.header--static).sticky {
     position: fixed;
     padding: 10px 0;
     transition-duration: 0.5s;
@@ -39,8 +39,6 @@
       opacity: 1;
       height: 2px;
       transition: 0.3s ease-out;
-    }
-    .nav__inner-link {
     }
   }
   &--white {
