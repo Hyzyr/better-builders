@@ -168,6 +168,25 @@
       }
     }
   }
+  &--border {
+    textarea,
+    input {
+      background: unset;
+      border-radius: unset;
+      color: $white !important;
+      padding: 1em 1.5em;
+      border-color: rgba($white, 0.25);
+      &:focus {
+        border-color: $white;
+        &::placeholder {
+          color: rgba($white, 0.2);
+        }
+      }
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
 }
 .button {
   cursor: pointer;

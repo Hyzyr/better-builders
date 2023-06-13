@@ -1,0 +1,32 @@
+.swiper {
+  &-arrows {
+    display: flex;
+    gap: 0.75rem;
+  }
+  &-arrow {
+    width: 4.5rem;
+    height: 4.5rem;
+    background: $gray-light;
+    border: 1px solid $gray-light;
+    color: $black;
+    transition: 0.2s ease-out;
+
+    //diplay
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 70%;
+      height: auto;
+    }
+    &:hover {
+      border-color: $gray;
+    }
+    &.swiper-button-disabled {
+      cursor: default;
+      color: rgba($black, 0.2);
+      border-color: $gray-light;
+    }
+  }
+}
