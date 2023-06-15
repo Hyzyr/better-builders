@@ -34,7 +34,7 @@
       position: absolute;
       content: "";
       bottom: 0;
-      height: 67%;
+      height: 70%;
       width: 100%;
       background: $black-5;
       z-index: -2;
@@ -42,7 +42,7 @@
     .bg__image {
       top: unset;
       bottom: 0;
-      height: 67%;
+      height: 70%;
       transform: translate(-25%);
       opacity: 0.8;
       mix-blend-mode: color-dodge;
@@ -140,10 +140,10 @@
   .bg {
     &--st {
       &:after {
-        height: 70%;
+        height: 72%;
       }
       .bg__image {
-        height: 70%;
+        height: 72%;
       }
     }
   }

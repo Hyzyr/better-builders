@@ -151,6 +151,11 @@
           display: flex !important;
           height: unset !important;
         }
+        &-arrows {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 1rem;
+        }
       }
     }
   }
@@ -565,6 +570,16 @@
     }
   }
   .testimonials {
+    &__inner {
+      &-swiper {
+        .swiper {
+          &-arrow {
+            font-size: 16px;
+            // margin-top: 1rem;
+          }
+        }
+      }
+    }
     &__item {
       font-size: 25px;
     }
@@ -655,6 +670,14 @@
       }
     }
   }
+  .testimonials {
+    &__inner {
+      .swiper-arrow {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
 }
 @mixin index-1025 {
   .about {
@@ -714,13 +737,6 @@
       &-title {
         align-items: unset;
         flex-direction: column;
-        .swiper-arrow {
-          width: 3rem;
-          height: 3rem;
-        }
-        .swiper-arrows {
-          margin-left: auto;
-        }
       }
     }
   }
@@ -831,7 +847,7 @@
       &-link {
         width: calc(50% - 10px);
         strong {
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
       }
     }

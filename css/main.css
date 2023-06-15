@@ -1614,7 +1614,7 @@ svg {
   position: absolute;
   content: "";
   bottom: 0;
-  height: 67%;
+  height: 70%;
   width: 100%;
   background: #14111c;
   z-index: -2;
@@ -1622,7 +1622,7 @@ svg {
 .bg--st .bg__image {
   top: unset;
   bottom: 0;
-  height: 67%;
+  height: 70%;
   -webkit-transform: translate(-25%);
           transform: translate(-25%);
   opacity: 0.8;
@@ -1927,6 +1927,15 @@ svg {
   display: -ms-flexbox !important;
   display: flex !important;
   height: unset !important;
+}
+.testimonials__inner-swiper .swiper-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1rem;
 }
 .testimonials__item {
   position: relative;
@@ -2513,10 +2522,10 @@ body {
     line-height: 1.3;
   }
   .bg--st:after {
-    height: 70%;
+    height: 72%;
   }
   .bg--st .bg__image {
-    height: 70%;
+    height: 72%;
   }
   .hero__inner h1 {
     line-height: 1.2;
@@ -2547,6 +2556,9 @@ body {
   .services__item-icon {
     width: 90px;
     height: 90px;
+  }
+  .testimonials__inner-swiper .swiper-arrow {
+    font-size: 16px;
   }
   .testimonials__item {
     font-size: 25px;
@@ -2728,6 +2740,10 @@ body {
     font-size: 1.8rem;
   }
   .services__inner .swiper-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .testimonials__inner .swiper-arrow {
     width: 2.5rem;
     height: 2.5rem;
   }
@@ -2975,13 +2991,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .services__inner-title .swiper-arrow {
-    width: 3rem;
-    height: 3rem;
-  }
-  .services__inner-title .swiper-arrows {
-    margin-left: auto;
   }
 }
 @media (max-width: 840px) {
