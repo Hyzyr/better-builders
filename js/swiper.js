@@ -13,6 +13,10 @@ const settings = {
       },
       768: {
         slidesPerView: "auto",
+        spaceBetween: 25,
+      },
+      1550: {
+        slidesPerView: "auto",
         spaceBetween: 35,
       },
     },
@@ -30,6 +34,10 @@ const settings = {
         spaceBetween: 20,
       },
       768: {
+        slidesPerView: "auto",
+        spaceBetween: 25,
+      },
+      1550: {
         slidesPerView: "auto",
         spaceBetween: 35,
       },

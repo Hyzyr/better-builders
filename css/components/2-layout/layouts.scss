@@ -135,3 +135,16 @@
     }
   }
 }
+
+@mixin layouts-1550 {
+  .bg {
+    &--st {
+      &:after {
+        height: 70%;
+      }
+      .bg__image {
+        height: 70%;
+      }
+    }
+  }
+}

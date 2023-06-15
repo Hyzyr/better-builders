@@ -168,6 +168,24 @@
     }
   }
 }
+@mixin header-1550 {
+  .header {
+    padding: 35px 0;
+    &__inner {
+      .logo {
+        font-size: 18px;
+      }
+    }
+  }
+  .nav {
+    &__inner {
+      gap: 65px;
+      &-link {
+        font-size: 18px;
+      }
+    }
+  }
+}
 @mixin header-1390 {
   .header {
     padding: 40px 0;
@@ -179,7 +197,7 @@
   }
   .nav {
     &__inner {
-      gap: 65px;
+      gap: 40px;
     }
   }
 }
@@ -189,14 +207,6 @@
     &__inner {
       .logo {
         font-size: 16px;
-      }
-    }
-  }
-  .nav {
-    &__inner {
-      gap: 40px;
-      &-link {
-        font-size: 18px;
       }
     }
   }
@@ -273,7 +283,7 @@
         }
 
         &.active {
-          color: $secondary;
+          color: $primary;
           &:after {
             display: block;
             left: -8px;

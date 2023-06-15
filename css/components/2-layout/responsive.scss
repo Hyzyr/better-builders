@@ -1,6 +1,20 @@
 @media (max-width: 1550px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+  .autoContainer {
+    max-width: 1200px;
+
+    &._lg {
+      max-width: 1280px;
+    }
+  }
   @include footer-1550;
+  @include header-1550;
   @include typography-1550;
+  @include components-1550;
+  @include layouts-1550;
   @include index-1550;
 }
 @media (max-width: 1390px) {
@@ -12,7 +26,6 @@
 @media (max-width: 1280px) {
   @include header-1280;
   @include footer-1280;
-  @include components-1280;
   @include typography-1280;
   @include index-1280;
 }
@@ -25,10 +38,6 @@
   @include index-1160;
 }
 @media (max-width: 1025px) {
-  html,
-  body {
-    font-size: 18px;
-  }
   .autoContainer {
     padding: 0 30px;
   }
@@ -49,6 +58,7 @@
 }
 
 @media (max-width: 840px) {
+  @include index-840;
   @include footer-840;
 }
 @media (min-width: 768px) {
