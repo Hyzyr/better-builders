@@ -1128,6 +1128,7 @@ svg {
   height: 100%;
   z-index: -1;
   pointer-events: none;
+  background: #14111c;
 }
 .footer__bg:after {
   position: absolute;

@@ -12,6 +12,7 @@
     height: 100%;
     z-index: -1;
     pointer-events: none;
+    background: $black-5;
     &:after {
       position: absolute;
       content: "";
