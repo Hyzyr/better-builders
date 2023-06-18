@@ -21,7 +21,7 @@
       height: 100%;
       width: 100%;
       background: $black-5;
-      opacity: .85;
+      opacity: 0.85;
     }
     img {
       @include fullImage;
@@ -79,7 +79,7 @@
         flex-direction: column;
         align-items: flex-start;
         color: $white;
-        a {
+        & > a {
           position: relative;
           color: inherit;
           font-family: $font-primary;
