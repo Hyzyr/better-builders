@@ -2078,8 +2078,6 @@ svg {
   padding-top: 1em;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
-  -webkit-transform: rotateY(30deg) scale(0.9);
-          transform: rotateY(30deg) scale(0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2110,17 +2108,14 @@ svg {
           transition-delay: 0s;
 }
 .projects__inner-link:hover img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 .projects__inner-link:hover > strong {
   opacity: 1;
   padding-top: 0;
-  letter-spacing: 1px;
   -webkit-transition: all 0.3s ease-out 0.05s, letter-spacing 0.5s ease 0.25s;
   transition: all 0.3s ease-out 0.05s, letter-spacing 0.5s ease 0.25s;
-  -webkit-transform: unset;
-          transform: unset;
 }
 .projects__inner-swiper .swiper {
   overflow: visible;
@@ -2571,7 +2566,7 @@ body {
     max-width: 370px;
   }
   .projects__inner-link > strong {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
   .contact__inner-row {
     gap: 1.6rem;
