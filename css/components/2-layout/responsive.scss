@@ -48,7 +48,6 @@
   @include index-1025;
   @include blog-1025;
 }
-
 @media (max-width: 940px) {
   .autoContainer {
     padding: 0 25px;
@@ -56,7 +55,6 @@
   @include typography-940;
   @include index-940;
 }
-
 @media (max-width: 840px) {
   @include index-840;
   @include footer-840;
@@ -64,7 +62,6 @@
 @media (min-width: 768px) {
   @include index-min-768;
 }
-
 @media (max-width: 768px) {
   html,
   body {
@@ -79,6 +76,10 @@
   @include components-768;
   @include index-768;
 }
+@media (max-width: 640px) {
+  @include footer-640;
+}
+
 @media (max-width: 580px) {
   ._hideMob {
     display: none;

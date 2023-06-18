@@ -659,6 +659,7 @@
 @mixin components-1550 {
   .button {
     font-size: 18px;
+  
   }
   .input {
     font-size: 18px;
@@ -680,6 +681,9 @@
 @mixin components-1025 {
   .button {
     font-size: 16px;
+    &__wrapper{
+      gap: 15px;
+    }
   }
   .input {
     font-size: 18px;

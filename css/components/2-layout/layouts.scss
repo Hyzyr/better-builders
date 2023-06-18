@@ -15,7 +15,6 @@
 }
 .bg {
   position: relative;
-
   &__image {
     position: absolute;
     top: 0;
@@ -24,7 +23,6 @@
     height: 100%;
     z-index: -1;
     pointer-events: none;
-
     img {
       @include fullImage;
     }
@@ -135,7 +133,6 @@
     }
   }
 }
-
 @mixin layouts-1550 {
   .bg {
     &--st {
