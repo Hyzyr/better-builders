@@ -309,6 +309,9 @@
           transition: all 0.3s ease-out 0.05s, letter-spacing 0.5s ease 0.25s;
         }
       }
+      .ratioImage {
+        padding-bottom: 95%;
+      }
     }
     &-swiper {
       .swiper {
@@ -524,6 +527,9 @@
     &__inner {
       h1 {
         line-height: 1.2;
+      }
+      &-license {
+        font-size: 2.1rem;
       }
     }
   }

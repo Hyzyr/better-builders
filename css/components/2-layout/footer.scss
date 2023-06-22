@@ -27,6 +27,7 @@
       @include fullImage;
       position: relative;
       z-index: -1;
+      opacity: 0.4;
     }
   }
   &__inner {

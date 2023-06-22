@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-smaller.png"
+      media="(min-width: 940px) and (max-width: 1200px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero.png"
+      media="(min-width: 1200px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-small.png"
+      media="(max-width: 940px)"
+    />
     <link rel="icon" href="images/logo-light.png" />
     <link
       rel="stylesheet"
@@ -40,21 +58,24 @@
       <section class="hero">
         <div class="autoContainer _lg">
           <div class="hero__bg">
-            <img
-              src="images/hero.png"
-              data-srcset="images/hero.png"
-              alt="bg"
-              loading="lazy"
-              class="lazy"
-            />
+            <picture alt="bg">
+              <source
+                srcset="/images/hero-smaller.png"
+                media="(min-width: 940px) and (max-width: 1200px)"
+              />
+              <source
+                srcset="/images/hero-small.png"
+                media="(max-width: 940px)"
+              />
+              <img src="/images/hero.png" />
+            </picture>
             <div class="hero__bg-fog" style="opacity: 0.55"></div>
           </div>
           <div class="hero__inner">
             <div class="hero__inner-box">
               <h1>
-                TRANSFORMING SPACES,
-                <br />
-                BUILDING DREAMs
+                We Don't Sell Dreams.<br />
+                We Build Them.
               </h1>
               <div class="hero__inner-license">License Number: 123456789</div>
               <p>
@@ -501,52 +522,88 @@
               <h2>Building Trust, Crafting Excellence</h2>
             </div>
             <div class="projects__inner-row">
-              <div class="projects__inner-link" data-event="preview">
-                <img
-                  src="images/projects/grid-6.png"
-                  alt="grid-6"
-                  loading="lazy"
-                />
+              <div
+                class="projects__inner-link"
+                data-event="preview"
+                data-src="images/projects/outdoor-1.jpeg"
+              >
+                <div class="ratioImage">
+                  <img
+                    src="images/projects/small/outdoor-1.jpeg"
+                    alt="grid-6"
+                    loading="lazy"
+                  />
+                </div>
                 <strong>Click To Enlarge</strong>
               </div>
-              <div class="projects__inner-link" data-event="preview">
-                <img
-                  src="images/projects/grid-1.png"
-                  alt="grid-1"
-                  loading="lazy"
-                />
+              <div
+                class="projects__inner-link"
+                data-event="preview"
+                data-src="images/projects/Bathroom-1.jpeg"
+              >
+                <div class="ratioImage">
+                  <img
+                    src="images/projects/small/Bathroom-1.jpeg"
+                    alt="grid-1"
+                    loading="lazy"
+                  />
+                </div>
                 <strong>Click To Enlarge</strong>
               </div>
-              <div class="projects__inner-link" data-event="preview">
-                <img
-                  src="images/projects/grid-2.png"
-                  alt="grid-2"
-                  loading="lazy"
-                />
+              <div
+                class="projects__inner-link"
+                data-event="preview"
+                data-src="images/projects/Bathroom-2.jpeg"
+              >
+                <div class="ratioImage">
+                  <img
+                    src="images/projects/small/Bathroom-2.jpeg"
+                    alt="grid-2"
+                    loading="lazy"
+                  />
+                </div>
                 <strong>Click To Enlarge</strong>
               </div>
-              <div class="projects__inner-link" data-event="preview">
-                <img
-                  src="images/projects/grid-3.png"
-                  alt="grid-3"
-                  loading="lazy"
-                />
+              <div
+                class="projects__inner-link"
+                data-event="preview"
+                data-src="images/projects/bathroom-8.jpeg"
+              >
+                <div class="ratioImage">
+                  <img
+                    src="images/projects/small/bathroom-8.jpeg"
+                    alt="grid-3"
+                    loading="lazy"
+                  />
+                </div>
                 <strong>Click To Enlarge</strong>
               </div>
-              <div class="projects__inner-link" data-event="preview">
-                <img
-                  src="images/projects/grid-4.png"
-                  alt="grid-4"
-                  loading="lazy"
-                />
+              <div
+                class="projects__inner-link"
+                data-event="preview"
+                data-src="images/projects/Kitchen 2.jpeg"
+              >
+                <div class="ratioImage">
+                  <img
+                    src="images/projects/small/Kitchen 2.jpeg"
+                    alt="grid-4"
+                    loading="lazy"
+                  />
+                </div>
                 <strong>Click To Enlarge</strong>
               </div>
-              <div class="projects__inner-link" data-event="preview">
-                <img
-                  src="images/projects/grid-5.png"
-                  alt="grid-5"
-                  loading="lazy"
-                />
+              <div
+                class="projects__inner-link"
+                data-event="preview"
+                data-src="images/projects/Kitchen-1.jpeg"
+              >
+                <div class="ratioImage">
+                  <img
+                    src="images/projects/small/Kitchen-1.jpeg"
+                    alt="grid-5"
+                    loading="lazy"
+                  />
+                </div>
                 <strong>Click To Enlarge</strong>
               </div>
             </div>
@@ -778,8 +835,16 @@
     <div class="modal" id="imagePopup">
       <div class="modal__inner">
         <button class="modal-close"></button>
-        <div class="modal__inner-image">
-          <img src="images/projects/grid-6.png" alt="grid-6" loading="lazy" />
+        <div class="modal__inner-image" id="imageWrapper">
+          <div class="modal__inner-image-loading">
+            <div class="spinner">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img id="imageThumb" />
+          </div>
+          <img id="imagePreview" />
         </div>
       </div>
     </div>
@@ -790,32 +855,3 @@
     <script src="js/highlight-nav.js"></script>
   </body>
 </html>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-    if ("IntersectionObserver" in window) {
-      let lazyImageObserver = new IntersectionObserver(function (
-        entries,
-        observer
-      ) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            let lazyImage = entry.target;
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImage.srcset = lazyImage.dataset.srcset;
-            lazyImage.classList.remove("lazy");
-            lazyImageObserver.unobserve(lazyImage);
-          }
-        });
-      });
-
-      lazyImages.forEach(function (lazyImage) {
-        lazyImageObserver.observe(lazyImage);
-      });
-    } else {
-      // Possibly fall back to event handlers here
-    }
-  });
-</script>

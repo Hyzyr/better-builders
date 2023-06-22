@@ -655,11 +655,49 @@
   position: relative;
   top: -100px;
 }
+.spinner {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  width: 4em;
+  height: 4em;
+
+  div {
+    display: inline-block;
+    position: absolute;
+    left: 0.4em;
+    width: 0.8em;
+    background: rgba($black-3, 0.6);
+    animation: spinner 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  div:nth-child(1) {
+    left: 0.4em;
+    animation-delay: -0.24s;
+  }
+  div:nth-child(2) {
+    left: 1.6em;
+    animation-delay: -0.12s;
+  }
+  div:nth-child(3) {
+    left: 2.8em;
+    animation-delay: 0;
+  }
+}
+@keyframes spinner {
+  0% {
+    top: 0.4em;
+    height: 3.2em;
+  }
+  50%,
+  100% {
+    top: 1.2em;
+    height: 1.6em;
+  }
+}
 
 @mixin components-1550 {
   .button {
     font-size: 18px;
-  
   }
   .input {
     font-size: 18px;
@@ -681,7 +719,7 @@
 @mixin components-1025 {
   .button {
     font-size: 16px;
-    &__wrapper{
+    &__wrapper {
       gap: 15px;
     }
   }

@@ -67,15 +67,27 @@ const toggleModal = (eventBtn, modal, callbackFunc = null) => {
   };
 };
 
+const loadImage = (imgLink, imgLinkSmall) => {
+  const imageWrapper = document.getElementById("imageWrapper");
+  const imageThumb = document.getElementById("imageThumb");
+  const imagePreview = document.getElementById("imagePreview");
+  imageWrapper.classList.remove("active");
+  imageThumb.src = imgLinkSmall;
+  imagePreview.src = imgLink;
+
+  imagePreview.onload = () => {
+    imageWrapper.classList.add("active");
+  };
+};
+
 document.querySelectorAll('[data-event="preview"]').forEach((previewItem) => {
   const modal = document.querySelector("#imagePopup");
-  const imgLink = previewItem.querySelector("img").src;
+  const imgLinkSmall = previewItem.querySelector("img").src;
+  const imgLink = previewItem.dataset?.src;
+
   if (modal && imgLink) {
     console.log("set onclick");
-    toggleModal(previewItem, modal, () => {
-      console.log("imgLink", imgLink);
-      modal.querySelector("img").src = imgLink;
-    });
+    toggleModal(previewItem, modal, () => loadImage(imgLink, imgLinkSmall));
   }
 });
 
