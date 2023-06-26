@@ -94,7 +94,18 @@ document.querySelectorAll('[data-event="preview"]').forEach((previewItem) => {
 ///
 ///
 ///
-///WOW JS
-// new WOW().init({
-//   boxClass: "wow",
-// });
+const feedbackItems = document.querySelectorAll(".testimonials__item");
+const clearActives = (except) => {
+  feedbackItems.forEach((feedbackItem) => {
+    if (except !== feedbackItem) feedbackItem.classList.remove("active");
+  });
+};
+feedbackItems.forEach((feedbackItem) => {
+  const toggleButton = feedbackItem.querySelector(
+    '[data-event="toggleFeedback"]'
+  );
+  toggleButton.onclick = () => {
+    clearActives(feedbackItem);
+    feedbackItem.classList.toggle("active");
+  };
+});

@@ -454,62 +454,6 @@
   width: 0.8em;
   color: inherit;
 
-  &--left {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 75%;
-      height: 75%;
-      background: transparent;
-      border-left: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
-      transform: translate(-25%, -50%) rotate(45deg);
-    }
-  }
-  &--rtArr {
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 75%;
-      height: 75%;
-      background: transparent;
-      border-right: 2px solid currentColor;
-      border-top: 2px solid currentColor;
-      transform: translate(-50%, -50%);
-    }
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: 2px;
-      background: currentColor;
-      transform: translate(-50%, -50%) rotate(-45deg);
-    }
-  }
-  &--right {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 75%;
-      height: 75%;
-      background: transparent;
-      border-right: 2px solid currentColor;
-      border-top: 2px solid currentColor;
-      transform: translate(-75%, -50%) rotate(45deg);
-    }
-  }
   &--up {
     &::before {
       content: "";
@@ -517,108 +461,12 @@
       display: block;
       top: 50%;
       left: 50%;
-      border-bottom: 5px solid #7b8a8a;
-      border-right: 5px solid transparent;
-      border-left: 5px solid transparent;
-      transform: translate(-50%, -50%);
+      width: 0.5em;
+      height: 0.5em;
+      border-top: 2px solid $primary;
+      border-right: 2px solid $primary;
+      transform: translate(-50%, -75%) rotate(135deg);
       transition: all 0.3s ease-in-out;
-    }
-  }
-  &--down {
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: 50%;
-      border-top: 5px solid #7b8a8a;
-      border-right: 5px solid transparent;
-      border-left: 5px solid transparent;
-      transform: translate(-50%, -50%);
-      transition: all 0.3s ease-in-out;
-    }
-  }
-  &--cross {
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 2px;
-      height: 100%;
-      background: $black;
-    }
-    &:before {
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
-    &:after {
-      transform: translate(-50%, -50%) rotate(-45deg);
-    }
-  }
-  &--tick {
-    margin-right: 5px;
-
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 45%;
-      height: 80%;
-      border-bottom: 2px solid $black;
-      border-right: 2px solid $black;
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
-  }
-  &--dots {
-    font-size: 5px;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background: $black;
-    transition: 0.2s ease-in;
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      width: 1em;
-      height: 1em;
-      border-radius: 50%;
-      background: inherit;
-      transition: 0.2s ease-in;
-    }
-    &:before {
-      left: calc(100% + 0.75em);
-    }
-    &:after {
-      right: calc(100% + 0.75em);
-    }
-    &.active {
-      width: 4.5em;
-      border-radius: 2px;
-      &:before,
-      &:after {
-        opacity: 0;
-      }
-    }
-  }
-  &--rounded {
-    font-size: inherit;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background: $primary;
-
-    &:after {
-      top: 45%;
-      width: 25%;
-      height: 50%;
-      border-color: $black;
     }
   }
 }

@@ -8,19 +8,19 @@
     <link
       rel="preload"
       as="image"
-      href="/images/hero-smaller.png"
+      href="./images/hero-smaller.png"
       media="(min-width: 940px) and (max-width: 1200px)"
     />
     <link
       rel="preload"
       as="image"
-      href="/images/hero.png"
+      href="./images/hero.png"
       media="(min-width: 1200px)"
     />
     <link
       rel="preload"
       as="image"
-      href="/images/hero-small.png"
+      href="./images/hero-small.png"
       media="(max-width: 940px)"
     />
     <link rel="icon" href="images/logo-light.png" />
@@ -60,14 +60,14 @@
           <div class="hero__bg">
             <picture alt="bg">
               <source
-                srcset="/images/hero-smaller.png"
+                srcset="./images/hero-smaller.png"
                 media="(min-width: 940px) and (max-width: 1200px)"
               />
               <source
-                srcset="/images/hero-small.png"
+                srcset="./images/hero-small.png"
                 media="(max-width: 940px)"
               />
-              <img src="/images/hero.png" />
+              <img src="./images/hero.png" />
             </picture>
             <div class="hero__bg-fog" style="opacity: 0.55"></div>
           </div>
@@ -86,7 +86,7 @@
                 <a href="tel:818-300-8242" class="button button--primary">
                   Call us
                 </a>
-                <a href="#" class="button button--border">
+                <a href="#contact-us" class="button button--border">
                   Schedule Appointment
                 </a>
               </div>
@@ -402,72 +402,136 @@
               <div class="testimonials__inner-swiper">
                 <div class="swiper" data-swiper="testimonials">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide testimonials__item">
-                      <div class="testimonials__item-image">
-                        <img
-                          src="images/testimonials/tesitiomials-1.png"
-                          alt="tesitiomials-1"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div class="testimonials__item-content">
-                        <h6>Sarah D</h6>
-                        <p class="_sm">
-                          Better Builders turned our outdated kitchen into a
-                          stunning culinary masterpiece. Their team's expertise
-                          and creativity transformed the...
-                        </p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide testimonials__item">
-                      <div class="testimonials__item-image">
-                        <img
-                          src="images/testimonials/tesitiomials-2.png"
-                          alt="tesitiomials-2"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div class="testimonials__item-content">
-                        <h6>Mark and Jennifer S</h6>
-                        <p class="_sm">
-                          We hired Better Builders for a major renovation pr-
-                          oject, and they delivered exceptional results. Their
-                          communication throughout the process was...
-                        </p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide testimonials__item">
-                      <div class="testimonials__item-image">
-                        <img
-                          src="images/testimonials/tesitiomials-3.png"
-                          alt="tesitiomials-3"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div class="testimonials__item-content">
-                        <h6>Alex W</h6>
-                        <p class="_sm">
-                          Better Builders exceeded our expectations with th- eir
-                          expertise in creating outdoor living spaces. Our new
-                          deck and patio have become the heart...
-                        </p>
+                    <div class="swiper-slide">
+                      <div class="testimonials__item">
+                        <div class="testimonials__item-image">
+                          <img
+                            src="images/testimonials/tesitiomials-1.png"
+                            alt="tesitiomials-1"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="testimonials__item-content">
+                          <h6>Sarah D</h6>
+                          <p class="_sm">
+                            Better Builders turned our outdated kitchen into a
+                            stunning culinary masterpiece. Their team's
+                            expertise and creativity transformed the. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit.
+                            Officiis ratione sapiente consequuntur omnis
+                            laudantium excepturi odit eaque porro veniam quasi,
+                            voluptate minus, quos fuga voluptatibus similique ex
+                            eos, commodi natus!
+                          </p>
+                        </div>
+                        <div class="testimonials__item-footer">
+                          <button
+                            class="button button--text"
+                            data-event="toggleFeedback"
+                          >
+                            Read more
+                            <span class="custIcon custIcon--up"></span>
+                          </button>
+                        </div>
                       </div>
                     </div>
-                    <div class="swiper-slide testimonials__item">
-                      <div class="testimonials__item-image">
-                        <img
-                          src="images/testimonials/tesitiomials-1.png"
-                          alt="tesitiomials-1"
-                          loading="lazy"
-                        />
+                    <div class="swiper-slide">
+                      <div class="testimonials__item">
+                        <div class="testimonials__item-image">
+                          <img
+                            src="images/testimonials/tesitiomials-2.png"
+                            alt="tesitiomials-2"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="testimonials__item-content">
+                          <h6>Mark and Jennifer S</h6>
+                          <p class="_sm">
+                            We hired Better Builders for a major renovation pr-
+                            oject, and they delivered exceptional results. Their
+                            communication throughout the process was. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit.
+                            Officiis ratione sapiente consequuntur omnis
+                            laudantium excepturi odit eaque porro veniam quasi,
+                            voluptate minus, quos fuga voluptatibus similique ex
+                            eos, commodi natus!
+                          </p>
+                        </div>
+                        <div class="testimonials__item-footer">
+                          <button
+                            class="button button--text"
+                            data-event="toggleFeedback"
+                          >
+                            Read more
+                            <span class="custIcon custIcon--up"></span>
+                          </button>
+                        </div>
                       </div>
-                      <div class="testimonials__item-content">
-                        <h6>Sarah D</h6>
-                        <p class="_sm">
-                          Better Builders turned our outdated kitchen into a
-                          stunning culinary masterpiece. Their team's expertise
-                          and creativity transformed the...
-                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonials__item">
+                        <div class="testimonials__item-image">
+                          <img
+                            src="images/testimonials/tesitiomials-3.png"
+                            alt="tesitiomials-3"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="testimonials__item-content">
+                          <h6>Alex W</h6>
+                          <p class="_sm">
+                            Better Builders exceeded our expectations with th-
+                            eir expertise in creating outdoor living spaces. Our
+                            new deck and patio have become the heart. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit.
+                            Officiis ratione sapiente consequuntur omnis
+                            laudantium excepturi odit eaque porro veniam quasi,
+                            voluptate minus, quos fuga voluptatibus similique ex
+                            eos, commodi natus!
+                          </p>
+                        </div>
+                        <div class="testimonials__item-footer">
+                          <button
+                            class="button button--text"
+                            data-event="toggleFeedback"
+                          >
+                            Read more
+                            <span class="custIcon custIcon--up"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonials__item">
+                        <div class="testimonials__item-image">
+                          <img
+                            src="images/testimonials/tesitiomials-1.png"
+                            alt="tesitiomials-1"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="testimonials__item-content">
+                          <h6>Sarah D</h6>
+                          <p class="_sm">
+                            Better Builders turned our outdated kitchen into a
+                            stunning culinary masterpiece. Their team's
+                            expertise and creativity transformed the. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit.
+                            Officiis ratione sapiente consequuntur omnis
+                            laudantium excepturi odit eaque porro veniam quasi,
+                            voluptate minus, quos fuga voluptatibus similique ex
+                            eos, commodi natus!
+                          </p>
+                        </div>
+                        <div class="testimonials__item-footer">
+                          <button
+                            class="button button--text"
+                            data-event="toggleFeedback"
+                          >
+                            Read more
+                            <span class="custIcon custIcon--up"></span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -782,20 +846,20 @@
               </div>
               <div class="footer__inner-links-column">
                 <h3 class="_lg">Services</h3>
-                <a href="/projects/kitchen.html">Kitchen Remodeling</a>
-                <a href="/projects/bathroom.html">Bathroom Remodeling</a>
-                <a href="/projects/outdoor.html">Outdoor Remodeling</a>
-                <a href="/projects/home-office.html">Home Office</a>
-                <a href="/projects/staircase.html">Staircase Remodeling</a>
-                <a href="/projects/adu.html">ADU Construction</a>
+                <a href="./projects/kitchen.html">Kitchen Remodeling</a>
+                <a href="./projects/bathroom.html">Bathroom Remodeling</a>
+                <a href="./projects/outdoor.html">Outdoor Remodeling</a>
+                <a href="./projects/home-office.html">Home Office</a>
+                <a href="./projects/staircase.html">Staircase Remodeling</a>
+                <a href="./projects/adu.html">ADU Construction</a>
               </div>
               <div class="footer__inner-links-column">
                 <h3 class="_lg">Contact Info</h3>
                 <ul class="footer__inner-info-list">
                   <li>
                     <strong> Email:</strong>
-                    <a href="mailto:info@betterbuilders.com">
-                      info@betterbuilders.com
+                    <a href="mailto:info@betterbuildersla.com">
+                      info@betterbuildersla.com
                     </a>
                   </li>
                   <li>
